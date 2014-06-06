@@ -680,16 +680,16 @@ a:focus {
 .tab-wrap{
     display:block;
     max-height:100%;
-    width:960px;
+    width:100%;
     margin:0 auto;
-    padding: 0px;
+    padding: 0px 10px 0px 10px;
     font-size: 1.4rem;
 }
 
 .tab-wrap-about {
     display:block;
     max-height:100%;
-    width:960px;
+    width:100%;
     margin:0 auto;
     padding: 0px;
     font-size: 1.4rem;
@@ -728,7 +728,7 @@ a:focus {
     background: #ffffff;
     float:left;
     position: relative;
-    width: 320px;
+    width: 33.3%;
     max-width:100%;
     display:block;
 }
@@ -740,7 +740,7 @@ a:focus {
     background-color:#3a3837;
     font-size:15px;
     text-align: center;
-    width:320px;
+    width:100%;
     padding: 9px 0;
     margin: 0 auto;
     display: block;
@@ -2015,3 +2015,74 @@ div.wpcf7 .placeheld {
     opacity: 4;
 }
 
+@media screen and (max-width: 960px) {   /* mc-ipad */
+    .header-navigation a {
+        padding: 28px 15px;
+    }
+    .footer-widget {
+        padding: 33px 0 0 10px;
+    }
+    #panel1, #panel2, #panel3 {
+        height: 185px;
+    }
+    .tab-wrap-about {
+        padding: 0 0 0 10px;
+    }
+    .inspiration-slider .metaslider .slides img {
+        height: 217px;
+    }
+    .services-slider .metaslider .slides img {
+        height: 217px;
+    }.about-slider .metaslider .slides img {
+        height: 217px;
+    }.contact-slider .metaslider .slides img {
+        height: 217px;
+    }
+    .hm-quote-name {
+        width: 50%;
+    }
+    .content-left-half {
+        width: 20%;
+        padding: 45px 0 20px 10px;
+    }
+    .content-right-offset img {
+        width: 422px;
+    }
+    .content-right-offset {
+        width: 45%;
+    }
+    .content-left-offset {
+        width: 35%;
+        padding: 25px 25px 25px 10px;
+    }
+    .content-whole h2 {
+        margin-left: 10px;
+    }
+    .blog-header-section h2 {
+        margin-left: 10px;
+    }
+    .salv-tout {
+        padding: 25px 15px 40px 10px;
+    }
+    .take-it-left {
+        padding: 45px 20px 45px 17%;
+        width: 100%;
+    }
+    #inquiry {
+        width: 450px;
+        margin:40px 17%;
+    }
+    .blog-content {
+        padding-left: 10px;
+    }
+    .sidebar-blog {
+        width:38%;
+    }
+    .content-left-half-contact {
+        width: 70%;
+        padding-left: 25%;
+    }
+    .content-right-half-contact {
+        padding-left: 25%;
+    }
+}
