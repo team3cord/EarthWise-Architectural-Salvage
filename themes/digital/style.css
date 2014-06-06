@@ -2086,3 +2086,140 @@ div.wpcf7 .placeheld {
         padding-left: 25%;
     }
 }
+@media screen and (max-width: 640px) {   /* mc-phone */
+    .responsiveSelectContainer select.responsiveMenuSelect, select.responsiveMenuSelect {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .header-navigation a {
+        margin-top: 50px;
+    }
+    .site-title {
+        margin: 0 0 -20px 30%;
+    }
+    .site-header {
+        height: 188px;
+        background: #000000;
+    }
+    .home-slider {
+        display: none;
+    }
+    .inspiration-slider {
+        display: none;
+    }
+    .about-slider {
+        display: none;
+    }
+    .services-slider {
+        display: none;
+    }
+    .contact-slider {
+        display: none;
+    }
+    .slide {
+        width: 100%;
+    }
+    .tab-wrap article {
+        width: 100%;
+    }
+    #panel1, #panel2, #panel3 {
+        height: 400px;
+    }
+    .tab-wrap-about {
+        width: 96%;
+    }
+    .tab-wrap-about #about-us {
+        width: 96%;
+    }
+    .hm-inspire {
+        height: 810px;
+    }
+    .hm-inspire-slider {
+        width: 100%;
+    }
+    .hm-inspire-content {
+        width: 100%;
+    }
+    .hm-quote-name {
+        width: 308px;
+    }
+    .footer-form {
+        height: 515px;
+    }
+    #join input[type="submit"] {
+        margin-top: 10px;
+    }
+    .footer-site-title a {
+        float: left;
+        margin-left: 30%;
+    }
+    .content-left-half  {
+        width: 100%;
+        height: 65px;
+    }
+    .content-right-half {
+        width: 80%;
+    }
+    .content-right-half a {
+        display: block;
+        float: left;
+        width: 158px;
+        margin: 10px;
+    }
+    .content-left-offset {
+        width: 100%;
+    }
+    .content-right-offset {
+        width: 100%;
+    }
+    .content-right-offset img {
+        float: left;
+        width: 320px;
+    }
+    .main-content-wrap {
+        width: 100%;
+    }
+    .hm-inspire {
+        height: 940px;
+    }
+    .salv-tout {
+        width: 100%;
+    }
+    .take-it-left {
+        padding-left: 10px;
+    }
+    .container {
+        width: 100%
+    }
+    .container h1 {
+        font-size: 28px;
+    }
+    #inquiry {
+        width: 95%;
+        margin: 40px 10px 40px 10px;
+    }
+    .sidebar-blog {
+        display: none;
+    }
+    .blog-content {
+        width: 100%;
+    }
+    #contact-us-bids {
+        width: 100%;
+        padding-left: 10px;
+    }
+    #removal {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .content-right-half-contact {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .content-left-half-contact {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+}
