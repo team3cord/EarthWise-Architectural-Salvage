@@ -86,7 +86,7 @@ get_header(); ?>
                             _e( 'Chats', 'digital' );
 
                         else :
-                            _e( 'Archives', 'digital' );
+                            _e( 'About', 'digital' );
 
                         endif;
                         ?>

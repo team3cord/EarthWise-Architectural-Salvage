@@ -136,7 +136,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: "Open Sans Light" ;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1.5;
@@ -144,9 +144,40 @@ textarea {
 /*h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }*/
-@font-face {
+@import "css/font-awesome.css";
+
+ @font-face {
     font-family: 'nevis';
-    src: url(fonts/nevis.ttf);
+   src: url('fonts/nevis.ttf');
+}
+@font-face {
+    font-family: 'ProximaNova Bold';
+    src: url('fonts/ProximaNova-Bold.ttf');
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('fonts/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url('fonts/OpenSans-Semibold.ttf');
+}
+@font-face {
+    font-family: 'JosefinSlab';
+    src: url('fonts/JosefinSlab-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Light italic';
+    src: url('fonts/OpenSans-LightItalic.ttf');
+}
+.menu {font-family: nevis;}
+
+p {
+    font-family: "Open Sans Light";
 }
 
 /* Headings
@@ -302,22 +333,12 @@ th {
 4.0 Forms
 --------------------------------------------------------------*/
 #join {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "Open Sans Light  italic";
     font-style: italic;
     color:#d9d9d9;
 }
-#join input[type="submit"] {
-    opacity: .9; /* layer alpha */
-    background-clip: padding-box; /* prevents bg color from leaking outside the border */
-    background-color: #ed2d23; /* layer fill content */
-    color: #fff; /* text color */
-    font-family: "Myriad Pro";
-    font-size: 15px;
-    padding: 7px 40px 2px 32px;
-    text-decoration: none;
-    border: none!important;
-    margin-left: 10px;
-}
+
 #join input:hover {
     color: #ffffff;
     opacity: 4;
@@ -326,6 +347,30 @@ th {
 #join input[type="text"] {
     width: 230px;
     height: 42px;
+    margin-top: 7px;
+    font-style: italic;
+    color: #999999;
+}
+
+#join input[type="submit"] {
+    opacity: .9; /* layer alpha */
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #ed2d23; /* layer fill content */
+    color: #fff; /* text color */
+    font-family: "nevis";
+    font-size: 17px;
+    padding: 7px 26px 6px 17px;
+    width: 118px;
+    height: 41px;
+    text-decoration: none;
+    border: none!important;
+    margin-left: 10px;
+    font-style: normal;
+}
+
+#join input[type="text"] {
+    width: 230px;
+    height: 43px;
     margin-top: 7px;
     font-style: italic;
 }
@@ -350,6 +395,7 @@ a:active {
     font-size: 16px;
     padding: 11px 21px 11px 21px;
     text-decoration: none;
+    float: left;
     height: 41px;
 }
 .link-to:hover {
@@ -680,6 +726,7 @@ a:focus {
 .tab-wrap{
     display:block;
     max-height:100%;
+    max-width: 976px;
     width:100%;
     margin:0 auto;
     padding: 0px 10px 0px 10px;
@@ -689,10 +736,10 @@ a:focus {
 .tab-wrap-about {
     display:block;
     max-height:100%;
+    max-width: 960px;
     width:100%;
     margin:0 auto;
     padding: 0px;
-    font-size: 1.4rem;
 }
 .tab-wrap-about article{
     float:left;
@@ -1370,17 +1417,21 @@ ul.social-group {
     padding: 65px;
 }
 .hm-quote-content span {
+    font-family: "Open Sans italic";
+    font-size: 20px;
     font-style: italic;
 }
 .hm-quote-name {
     margin: 0 auto;
-    width: 40%;
+    width: 43%;
     height: 45px;
     background: url("images/testimonial-icon.png") no-repeat 25px 7px;
     padding: 15px;
 }
 .hm-quote-name span {
+    font-family: nevis;
     font-weight: bold;
+    font-size: 16px;
     font-style: normal!important;
 }
 .hm-quote-name .light-location {
@@ -1429,7 +1480,6 @@ ul.social-group {
 }
 .inspire-post-content {
     margin-top: -20px;
-    font-size: 13px;
 }
 .red-link {
     color: red;
@@ -1459,9 +1509,7 @@ ul.social-group {
 .mc-bold {
     font-weight: bold;
 }
-.salv-tout span {
-    font-size: 13px;
-}
+
 .take-it-left {
     float: left;
     padding: 45px 20px 45px 0;
@@ -1507,9 +1555,7 @@ ul.social-group {
 .sidebar-blog h1 {
     font-size: 20px;
 }
-.sidebar-blog p {
-    font-size: 13px;
-}
+
 .sidebar-blog a {
     color: #000000!important;
     text-decoration: none;
@@ -1524,7 +1570,6 @@ ul.social-group {
 .post-section {
     padding: 0px 10px 10px 0;
     width: 100%;
-    height: 210px;
     margin-bottom: 50px;
 }
 .post-section h4 {
@@ -1547,7 +1592,6 @@ ul.social-group {
 .post-section p {
     width: 70%;
     float: left;
-    font-size: 13px;
     padding: 0px 15px 15px 10px;
 }
 .pagination {
@@ -1561,6 +1605,7 @@ ul.social-group {
 #contact-us-bids li{
     display:inline;
     padding-right:25px;
+    color: #ffffff;
 }
 
 #contact-us-bids {
@@ -1887,35 +1932,13 @@ input[type="checkbox"], input[type="radio"] {
 
 .wpcf7-list-item { display: block!important; }
 
-.wpcf7-list-item-label {text-align:justify;}
-
-#join {
-    font-size: 14px;
-    font-style: italic;
-    color:#d9d9d9;
-}
-#join input[type="submit"] {
-    opacity: .9; /* layer alpha */
-    background-clip: padding-box; /* prevents bg color from leaking outside the border */
-    background-color: #ed2d23; /* layer fill content */
-    color: #fff; /* text color */
-    font-family: "nevis";
-    font-size: 17px;
-    padding: 7px 26px 6px 17px;
-    width: 118px;
-    height: 41px;
-    text-decoration: none;
-    border: none!important;
-    margin-left: 10px;
-    font-style: normal;
-}
-
-#join input[type="text"] {
-    width: 230px;
-    height: 43px;
+.wpcf7-list-item-label {
+    width: 89%;
+    float: right;
     margin-top: 7px;
-    font-style: italic;
 }
+
+
 
 div.wpcf7 {
     margin: 0;
@@ -1923,8 +1946,9 @@ div.wpcf7 {
 }
 
 div.wpcf7-response-output {
-    margin: 2em 0.5em 1em;
+    margin: 5px 0 0 5px;
     padding: 0.2em 1em;
+    color: #ffffff;
 }
 
 div.wpcf7 .screen-reader-response {
@@ -2143,6 +2167,9 @@ div.wpcf7 .placeheld {
     }
     .hm-quote-name {
         width: 308px;
+    }
+    .hm-quote-name span {
+        font-size: 13px;
     }
     .footer-form {
         height: 515px;
