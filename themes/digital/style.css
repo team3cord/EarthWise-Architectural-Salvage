@@ -194,8 +194,8 @@ h6 {
     color: #000000;
     font-weight: 700;
     line-height: 1.2;
-    margin: 0 0 16px;
-    margin: 0 0 1.6rem;
+/*    margin: 0 0 16px;
+    margin: 0 0 1.6rem;*/
 }
 
 h1 {
@@ -206,26 +206,36 @@ h1 {
 h2 {
     font-size: 40px;
     font-size: 3.7rem;
+    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
 }
 
 h3 {
     font-size: 24px;
     font-size: 2.4rem;
+    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
 }
 
 h4 {
     font-size: 20px;
     font-size: 2rem;
+    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
 }
 
 h5 {
     font-size: 18px;
     font-size: 1.8rem;
+    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
 }
 
 h6 {
     font-size: 16px;
     font-size: 1.6rem;
+    margin: 0 0 16px;
+    margin: 0 0 1.6rem;
 }
 p {
 	margin-bottom: 1.5em;
@@ -416,6 +426,12 @@ a:active {
 	width: 100%;
   background-color: rgba(0,0,0,0.55);
   z-index: 100;
+}
+.site-title {
+    margin: 0 ;
+}
+.header-navigation .site-description {
+    margin: 0;
 }
 .site-footer {
     clear: both;
@@ -772,7 +788,7 @@ a:focus {
 .slide {
     margin: 0;
     padding: 0;
-    background: #ffffff;
+    /*background: #ffffff;*/
     float:left;
     position: relative;
     width: 33.3%;
@@ -824,7 +840,7 @@ a:focus {
 }
 
 .home .metaslider .flexslider {
-
+    margin-bottom: 0px;
 }
 
 
@@ -1412,11 +1428,24 @@ ul.social-group {
     width: 100%;
     float: left;
 }
+.testimonial_rotator_quote strong  {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: nevis;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal!important;
+
+}
+.testimonial_rotator_quote strong:last-of-type{
+
+    color: #888888;
+}
 .hm-quote-content {
     text-align: center;
     padding: 65px;
 }
-.hm-quote-content span {
+.testimonial_rotator_quote blockquote {
     font-family: "Open Sans italic";
     font-size: 20px;
     font-style: italic;
@@ -1425,7 +1454,7 @@ ul.social-group {
     margin: 0 auto;
     width: 43%;
     height: 45px;
-    background: url("images/testimonial-icon.png") no-repeat 25px 7px;
+    /*background: url("images/testimonial-icon.png") no-repeat 25px 7px;*/
     padding: 15px;
 }
 .hm-quote-name span {
@@ -1684,6 +1713,9 @@ select menu{background-color:rgba(0,0,0,1.00);}
 .single .byline,
 .group-blog .byline {
 	display: inline;
+}
+.page-titles {
+    text-transform: uppercase;
 }
 .page-content,
 .entry-content,
@@ -2160,7 +2192,7 @@ div.wpcf7 .placeheld {
         height: 810px;
     }
     .hm-inspire-slider {
-        width: 100%;
+        width: 95%;
     }
     .hm-inspire-content {
         width: 100%;
@@ -2247,6 +2279,9 @@ div.wpcf7 .placeheld {
     .content-left-half-contact {
         width: 100%;
         padding-left: 10px;
+    }
+    .acf-map {
+        width: 100%!important;
     }
 
 }

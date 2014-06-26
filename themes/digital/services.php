@@ -61,8 +61,8 @@ get_header(); ?>
   <div class="take-it-left">
 
     <div class="container ">
-        <h1 class="bm-larger tm-larger text-center">WILL EW TAKE IT?</h1>
-        <p>Bring in what you’ve got, and we’ll take a look. Or, send us a photo of the materials that you have to offer. <br /><br />
+        <h1 class="bm-larger tm-larger text-center"><?php the_field('take_it_header'); ?></h1>
+        <p><?php the_field('take_it_description'); ?> <br /><br />
             See the list below for general guidelines.</p>
     </div>
 
@@ -81,41 +81,44 @@ get_header(); ?>
     <div class="container">
         <ul class="responsive-accordion responsive-accordion-default bm-larger">
             <li>
-                <div class="responsive-accordion-head">ACCEPTABLE <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div> <div class="responsive-accordion-panel">
-                    <p><strong>In general, we accept materials such as:</strong></p>
-                    <p>Doors, windows, and hardware Sinks, tubs, and/or their faucets and hardware new tile, stone, brick Wrought iron, garden design materials Trim, wood flooring, lumber Cabinetry Shutters and shelves</p>
+                <div class="responsive-accordion-head"><?php the_field('acceptable'); ?> <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div> <div class="responsive-accordion-panel">
+                    <p><strong><?php the_field('acceptable_callout'); ?></strong></p>
+                    <p><?php the_field('acceptable_description'); ?></p>
 
                 </div>
             </li>
             <li>
 
 
-                <div class="responsive-accordion-head">MARGINAL <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+                <div class="responsive-accordion-head"><?php the_field('marginal'); ?> <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
                 <div class="responsive-accordion-panel">
-                    <p>This is the marginal content area. It is a wysiwyg</p>
+                    <p><strong><?php the_field('marginal_callout'); ?></strong></p>
+                    <p><?php the_field('marginal_description'); ?></p>
 
                 </div>
             </li>
             <li>
-                <div class="responsive-accordion-head">GENERALLY UNACCEPTABLE  <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+                <div class="responsive-accordion-head"><?php the_field('generally_unacceptable'); ?> <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
                 <div class="responsive-accordion-panel">
-                    <p>This is the generally unacceptable content area. It is a wysiwyg</p>
+                    <p><strong><?php the_field('generally_callout'); ?></strong></p>
+                    <p><?php the_field('generally_description'); ?></p>
                 </div>
             </li>
             <li>
 
 
-                <div class="responsive-accordion-head">NEVER ACCEPTABLE <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
+                <div class="responsive-accordion-head"><?php the_field('never_acceptable'); ?> <i class="fa fa-chevron-down responsive-accordion-plus fa-fw"></i><i class="fa fa-chevron-up responsive-accordion-minus fa-fw"></i></div>
                 <div class="responsive-accordion-panel">
-                    <p>This is the never acceptable content area. It is a wysiwyg</p>
+                    <p><strong><?php the_field('never_callout'); ?></strong></p>
+                    <p><?php the_field('never_description'); ?></p>
 
                 </div>
             </li>
 
         </ul>
-        <p><b>2014 City of Seattle Salvage Assessment REQUIREMENT</b></p>
-        <p>Text about this here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus sit amet lacus ac viverra. Vivamus sed nunc lorem.</p>
-        <p><a href="#"><span style="color: red; text-decoration: underline; text-decoration-color: #F15123;">Find out more here</span></a></p>
+        <p><b><?php the_field('assessment_requirement'); ?></b></p>
+        <?php the_field('assessment_copy'); ?>
+        <p><a href="<?php the_field('find_more_link'); ?>"><span style="color: red; text-decoration: underline; text-decoration-color: #F15123;"><?php the_field('find_more_link_text'); ?></span></a></p>
     </div>
  </div>
     <div class="take-it-form" id="inquiry"><?php echo do_shortcode('[contact-form-7 id="32" title="Salvage Inquery"]'); ?></div>

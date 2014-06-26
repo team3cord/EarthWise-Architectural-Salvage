@@ -11,7 +11,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 debug con-page
-	<div class="entry-content">
+	<div class="entry-contentmc">
         debug page
 		<?php the_content(); ?>
 		<?php

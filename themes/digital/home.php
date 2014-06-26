@@ -59,10 +59,11 @@ get_header(); ?>
     <div class="mc-wrap">
 
         <div class="hm-quote-content">
-            <span><?php the_field('testimonial');?></span>
+            <?php echo do_shortcode("[testimonial_rotator id='171']"); ?>
+            <span><?//php the_field('testimonial');?></span>
             <div class="hm-quote-name">
-                <span class="bold-name"><?php the_field('testimonial_name');?></span>
-                <span class="light-location"><?php the_field('testimonial_location');?></div></span>
+                <span class="bold-name"><?//php the_field('testimonial_name');?></span>
+                <span class="light-location"><?//php the_field('testimonial_location');?></div></span>
             <div>
         </div>
     </div>

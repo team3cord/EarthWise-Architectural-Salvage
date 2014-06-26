@@ -23,7 +23,7 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+        <a href="<?php the_permalink(); ?>"><?//php the_post_thumbnail('large'); ?></a>
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'digital' ) ); ?>
 		<?php
 			wp_link_pages( array(

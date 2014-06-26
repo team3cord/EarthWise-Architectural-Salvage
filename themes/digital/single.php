@@ -32,13 +32,11 @@ get_header(); ?>
     <div class="single-post">
 
 
-    <div id="primary" class="blog-content content-area">
-        <main id="main" class="site-main" role="main">
 
             <?php if ( have_posts() ) : ?>
 
-                <header class="page-header">
-                    <h2 class="page-title">
+                    <div class="blog-header-section">
+                    <h2 class="page-titles">
                         <?php
                         if ( is_category() ) :
                             single_cat_title();
@@ -86,11 +84,15 @@ get_header(); ?>
                             _e( 'Chats', 'digital' );
 
                         else :
-                            _e( 'About', 'digital' );
+                            _e( 'The Salvage Strip', 'digital' );
 
                         endif;
                         ?>
                     </h2>
+                        </div>
+
+        <div id="primary" class="blog-content content-area">
+        <main id="main" class="site-main" role="main">
                     <?php
                     // Show an optional term description.
                     $term_description = term_description();
@@ -98,7 +100,6 @@ get_header(); ?>
                         printf( '<div class="taxonomy-description">%s</div>', $term_description );
                     endif;
                     ?>
-                </header><!-- .page-header -->
 
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
@@ -132,7 +133,5 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
     <?php get_sidebar('sidebar-1'   ); ?>
-</div>
-
 </div>
 <?php get_footer(); ?>

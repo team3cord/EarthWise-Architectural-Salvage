@@ -46,35 +46,7 @@ get_header(); ?>
         <h2>CONTACT US</h2>
     </div>
 </div>
-    <div class="hm-inspire">
-        <div class="mc-wrap">
 
-            <div id="contact-us-bids">
-            <h6>ACQUISITIONS/BIDS, DIRECT + DESIGN, COMMERCIAL SALES</h6>
-            <div style="margin-bottom: 0px;"><?php echo get_field('main_phone_number_contact_page') ?><br />
-
-                <a class="red-link" href="mailto:<?php echo get_field('main_email_for_contact_us_page_intro') ?>"><?php echo get_field('main_email_for_contact_us_page_intro') ?></a>
-                <br /><br />
-                <h6><?php echo get_field('sub_title_intro_contact_page') ?></h6>
-                OFFICE INQUERIES<br />
-                <a class="red-link" href="mailto:<?php echo get_field('office_hours_email') ?>"><?php echo get_field('office_hours_email') ?></a>
-
-            </div>
-            &nbsp;
-            <ul style="margin-left: none;">
-                <li><a href="http://www.hometalk.com/earthwisearchitecturalsalvage"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/house-icon.png" alt="" /></a></li>
-                <li><a href="http://www.pinterest.com/earthwiseinc/"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/pintarist.png" alt="" /></a></li>
-                <li><a href="https://www.facebook.com/EarthwiseSalvage"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/facebook.png" alt="" /></a></li>
-                <li><a href="https://twitter.com/earthwiseinc"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/twitter.png" alt="" /></a></li>
-                <li>#EWSALVAGE</li>
-            </ul>
-            &nbsp;
-
-            </div>
-
-            <div id="removal"><?php echo get_field('contact_us_form') ?></div>
-        </div>
-    </div>
 
 
 
@@ -133,7 +105,7 @@ get_header(); ?>
                     </div>
                                          <?php endif; ?></span>
                         <b><?php echo get_field('phone_number_for_tacoma_location') ?></b><br/>
-                        <?php echo get_field('address_for_tacoma') ?>4<br/>
+                        <?php echo get_field('address_for_tacoma') ?><br/>
                         <?php echo get_field('open_to_public_hours_tacoma') ?><br />
                         <b>SUMMER HOURS </b><?php echo get_field('tacoma_summer_hours') ?><br />
                         <b>WINTER HOURS </b><?php echo get_field('tacoma_winter_hours') ?>
@@ -143,6 +115,37 @@ get_header(); ?>
 
                 </div>
                 </div>
+
+    <div class="hm-inspire">
+        <div class="mc-wrap">
+
+            <div id="contact-us-bids">
+            <h6>ACQUISITIONS/BIDS, DIRECT + DESIGN, COMMERCIAL SALES</h6>
+            <div style="margin-bottom: 0px;"><?php echo get_field('main_phone_number_contact_page') ?><br />
+
+                <a class="red-link" href="mailto:<?php echo get_field('main_email_for_contact_us_page_intro') ?>"><?php echo get_field('main_email_for_contact_us_page_intro') ?></a>
+                <br /><br />
+                <h6><?php echo get_field('sub_title_intro_contact_page') ?></h6>
+                OFFICE INQUERIES<br />
+                <a class="red-link" href="mailto:<?php echo get_field('office_hours_email') ?>"><?php echo get_field('office_hours_email') ?></a>
+
+            </div>
+            &nbsp;
+            <ul style="margin-left: none;">
+                <li><a href="http://www.hometalk.com/earthwisearchitecturalsalvage"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/house-icon.png" alt="" /></a></li>
+                <li><a href="http://www.pinterest.com/earthwiseinc/"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/pintarist.png" alt="" /></a></li>
+                <li><a href="https://www.facebook.com/EarthwiseSalvage"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/facebook.png" alt="" /></a></li>
+                <li><a href="https://twitter.com/earthwiseinc"><img src="http://ewsalvage.crosshatchcreative.com/wp-content/themes/digital/images/twitter.png" alt="" /></a></li>
+                <li>#EWSALVAGE</li>
+            </ul>
+            &nbsp;
+
+            </div>
+
+            <div id="removal"><?php echo get_field('contact_us_form') ?></div>
+        </div>
+    </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
                     (function($) {
