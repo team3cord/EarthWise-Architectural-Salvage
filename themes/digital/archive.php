@@ -31,7 +31,6 @@ get_header(); ?>
 </div>
 
 <div class="mc-wrap">
-
     <div class="single-post">
 
     <div id="primary" class="blog-content content-area">

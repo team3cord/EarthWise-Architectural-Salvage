@@ -18,11 +18,11 @@
             <article><h4><?php echo  get_field('location_seattle_phone', 5); ?></h4>
                 <a class="red-link" href="mailto:<?php echo  get_field('location_seattle_email', 5); ?>"><?php echo  get_field('location_seattle_email', 5); ?></a><br />
                 <?php echo  get_field('location_seattle_address', 5); ?><br />
-                <a href="http://localhost/wp-ews//Earth-Wise/contact/#maps">Get Directions</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/#maps">Get Directions</a>
             </article>
 
             <article style="padding:0; margin:0;">
-                <img src="http://localhost/wp-ews//wp-content/uploads/2014/05/seattle-map.jpg" />
+                <img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2014/05/seattle-map.jpg" />
             </article>
 
         </div>
@@ -40,11 +40,11 @@
             <article><h4><?php echo  get_field('location_tacoma_phone', 5); ?></h4>
                 <a class="red-link" href="mailto:<?php echo  get_field('location_tacoma_email', 5); ?>"><?php echo  get_field('location_tacoma_email', 5); ?></a><br />
                 <?php echo  get_field('location_tacoma_address', 5); ?><br />
-                <a href="http://localhost/wp-ews//Earth-Wise/contact/#maps">Get Directions</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact/#maps">Get Directions</a>
             </article>
 
             <article style="padding:0; margin:0;">
-                <img src="http://localhost/wp-ews//wp-content/uploads/2014/05/tacoma-map.jpg" />
+                <img src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/2014/05/tacoma-map.jpg" />
             </article>
         </div>
     </div>

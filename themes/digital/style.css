@@ -1623,12 +1623,14 @@ ul.social-group {
     float: left;
     padding: 0px 15px 15px 10px;
 }
+.mc-single .post-section p {
+    width: 100%;
+}
 .pagination {
     width: 100%;
     float: left;
 }
 .single-post {
-    margin: 25px 0 50px 0;
     min-height: 650px;
 }
 #contact-us-bids li{

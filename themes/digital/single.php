@@ -28,14 +28,13 @@ get_header(); ?>
 
 </div>
 <div class="mc-wrap">
-
-    <div class="single-post">
+    <div class="">
 
 
 
             <?php if ( have_posts() ) : ?>
 
-                    <div class="blog-header-section">
+            <div class="blog-header-section">
                     <h2 class="page-titles">
                         <?php
                         if ( is_category() ) :
@@ -89,9 +88,9 @@ get_header(); ?>
                         endif;
                         ?>
                     </h2>
-                        </div>
+            </div>
 
-        <div id="primary" class="blog-content content-area">
+        <div id="primary" class="blog-content content-area mc-single">
         <main id="main" class="site-main" role="main">
                     <?php
                     // Show an optional term description.
