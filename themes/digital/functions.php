@@ -97,9 +97,11 @@ function digital_widgets_init() {
         'after_title'   => '</h1>',
     ) );
 
+
+
     register_sidebar( array(
-        'name'          => __( 'Location Tabs', 'digital' ),
-        'id'            => 'sidebar-3',
+        'name'          => __( 'Information Sidebar', 'digital' ),
+        'id'            => 'sidebar-5',
         'description'   => '',
         'before_widget' => '<div class="location-widget">',
         'after_widget'  => '</div>',

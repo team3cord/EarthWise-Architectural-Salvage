@@ -1741,7 +1741,11 @@ select menu{background-color:rgba(0,0,0,1.00);}
 }.contact-slider {
     clear: both;
     margin: -124px auto 0 auto;
-}/*--------------------------------------------------------------
+}
+.entry-contentmc {
+    min-height: 630px;
+}
+/*--------------------------------------------------------------
 10.2 Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
