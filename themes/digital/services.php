@@ -62,8 +62,8 @@ get_header(); ?>
 
     <div class="container ">
         <h1 class="bm-larger tm-larger text-center"><?php the_field('take_it_header'); ?></h1>
-        <p><?php the_field('take_it_description'); ?> <br /><br />
-            See the list below for general guidelines.</p>
+        <p><?php the_field('take_it_descritption'); ?> <br /><br />
+            <?php the_field('take_it_guidelines'); ?></p>
     </div>
 
     <!-- No JavaScript -->

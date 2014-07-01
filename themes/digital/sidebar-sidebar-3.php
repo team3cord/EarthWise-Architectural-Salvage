@@ -11,8 +11,8 @@
         <div class="tab-wrap">
 
             <article><h4><?php echo  get_field('location_seattle_days', 5); ?></h4>
-                <span style="color:#555555;"><b>WINTER HOURS</b></span> <?php echo  get_field('locations_seattle_winter', 5); ?><br />
-                <span style="color:#555555;"><b>SUMMER HOURS</b></span> <?php echo  get_field('locations_seattle_summer', 5); ?>
+                <span style="color:#555555;"><b>WINTER HOURS</b></span> <?php echo  get_field('location_seattle_winter', 5); ?><br />
+                <span style="color:#555555;"><b>SUMMER HOURS</b></span> <?php echo  get_field('location_seattle_summer', 5); ?>
             </article>
 
             <article><h4><?php echo  get_field('location_seattle_phone', 5); ?></h4>

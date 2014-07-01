@@ -6,51 +6,44 @@
  */
 
 get_header(); ?>
+<div class="about-slider">
+    <?php echo get_field('about_slider', 13 ); ?>
+</div>
+<div class="location-tabs">
+<//?php echo get_field('locations_tabs'); ?>
+<div class="tabs-wrap regularpagetabs">
+    <div class="tabs-nav-bar-back">
+        <div  class="response">
+            <div class="slide"><a href="#" class="btn-slide1">SEATTLE STORE</a></div>
+            <div class="slide"><a href="#" class="btn-slide2">TACOMA STORE</a></div>
+            <div class="slide"><a href="#" class="btn-slide3">ABOUT</a></div>
+        </div>
+    </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'digital' ); ?></h1>
-				</header><!-- .page-header -->
+    <?php get_sidebar('sidebar-3'); ?>
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'digital' ); ?></p>
+</div>
 
-					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+</div>
 
-					<?php if ( digital_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php _e( 'Most Used Categories', 'digital' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+    <div style="min-height: 720px;" class="mc-wrap">
 
-					<?php
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'digital' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+        <div class="blog-header-section">
+            <h2>404 ~ File or Page Not Found</h2>
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+        </div>
+        <div id="primary" class="blog-content content-area">
+            <main id="main" class="site-main" role="main"> 
+              <div class="post-section">
+              <p>We're sorry the page you requested cannot be found in our database. It may have been moved or changed. </p>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+              </div>
+           </main><!-- #main -->
+        </div><!-- #primary -->
+            <?php get_sidebar('sidebar-1'   ); ?>
+    </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php get_footer(); ?>
