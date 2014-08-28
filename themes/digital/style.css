@@ -378,7 +378,7 @@ th {
     font-style: normal;
 }
 
-#join input[type="text"] {
+#join input[type="email"] {
     width: 230px;
     height: 43px;
     margin-top: 7px;
@@ -490,18 +490,18 @@ a:active {
 	text-decoration: none;
     text-transform: uppercase;
     padding: 28px 24px;
-    color: #999;
+    color: #ffffff;
     margin-top: 10px;
 }
 .header-navigation a:hover, .footer-nav a:hover {
-    color: #ffffff;
+    color: #ed2d23;
 }
 .footer-nav a {
     padding: 21px 24px 22px 24px!important;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    color: #999;
+    color: #ffffff;
 }
 .footer-nav {
     height: 61px;
@@ -571,7 +571,7 @@ a:active {
 }
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
-    color: white;
+    color: #ed2d23;
 }
 /* Small menu */
 .menu-toggle {
@@ -794,7 +794,7 @@ a:focus {
     /*background: #ffffff;*/
     float:left;
     position: relative;
-    width: 33.3%;
+    width:25%;
     max-width:100%;
     display:block;
 }
@@ -1582,7 +1582,12 @@ ul.social-group {
     width: 40%;
     min-height: 500px;
     padding: 25px;
+    margin-bottom: 45px;
     background-color: rgba(0,0,0,0.1)!important;
+}
+.entry-footer {
+    float: left;
+    width: 100%;
 }
 .sidebar-blog h1 {
     font-size: 20px;
@@ -1601,6 +1606,7 @@ ul.social-group {
 }
 .post-section {
     padding: 0px 10px 10px 0;
+    float: left;
     width: 100%;
     margin-bottom: 50px;
 }
@@ -1741,6 +1747,8 @@ select menu{background-color:rgba(0,0,0,1.00);}
 }.about-slider {
     clear: both;
     margin: -124px auto 0 auto;
+    min-height: 165px;
+    background: url("images/inspirational_header1.jpg")no-repeat;
 }.contact-slider {
     clear: both;
     margin: -124px auto 0 auto;
@@ -2191,7 +2199,7 @@ div.wpcf7 .placeheld {
         width: 100%;
     }
     #panel1, #panel2, #panel3 {
-        height: 400px;
+        min-height: 400px;
     }
     .tab-wrap-about {
         width: 96%;
@@ -2200,7 +2208,7 @@ div.wpcf7 .placeheld {
         width: 96%;
     }
     .hm-inspire {
-        height: 810px;
+        min-height: 810px;
     }
     .hm-inspire-slider {
         width: 95%;
@@ -2251,7 +2259,7 @@ div.wpcf7 .placeheld {
         width: 100%;
     }
     .hm-inspire {
-        height: 940px;
+        min-height: 940px;
     }
     .salv-tout {
         width: 100%;

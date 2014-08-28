@@ -5,6 +5,26 @@
  * @package Digital
  */
 ?>
+
+<div class="location-tabs">
+<//?php echo get_field('locations_tabs'); ?>
+<div class="tabs-wrap regularpagetabs">
+    <div class="tabs-nav-bar-back">
+        <div  class="response">
+            <div class="slide"><a href="#" class="btn-slide1">SEATTLE STORE</a></div>
+            <div class="slide"><a href="#" class="btn-slide2">TACOMA STORE</a></div>
+            <div class="slide"><a href="#" class="btn-slide3">ABOUT</a></div>
+            <div class="slide">
+                <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                    <label>
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 <div class="mc-sidebar-3">
     <div id="panel1">
 
@@ -71,3 +91,5 @@
     </div>
 
 </div><!-- #secondary -->
+</div>
+

@@ -8,21 +8,8 @@ get_header(); ?>
 <div class="home-slider">
 <?php echo get_field('home_slider'); ?>
 </div>
-<div class="location-tabs">
-<//?php echo get_field('locations_tabs'); ?>
-<div class="tabs-wrap regularpagetabs">
-    <div class="tabs-nav-bar-back">
-        <div  class="response">
-            <div class="slide"><a href="#" class="btn-slide1">SEATTLE STORE</a></div>
-            <div class="slide"><a href="#" class="btn-slide2">TACOMA STORE</a></div>
-            <div class="slide"><a href="#" class="btn-slide3">ABOUT</a></div>
-        </div>
-    </div>
 
-
- <?php get_sidebar('sidebar-3'); ?>
-</div>
-
+<?php get_sidebar('sidebar-3'); ?>
 
 </div>
 
